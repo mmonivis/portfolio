@@ -1,0 +1,32 @@
+.navbar {
+	font-family: 'Josefin Sans', sans-serif;
+	// font-family: 'Raleway', sans-serif;
+	color: #fff;
+	height: 80px;
+}
+
+.nav-links {
+	line-height: 20px;
+	font-size: 18px;
+	vertical-align: middle;
+	text-align: right;
+	margin-right: 70px;
+
+	a {
+		color:#fff;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 30px 25px;
+	}
+
+	li:hover{
+		text-decoration: none;
+	}
+
+	li:active{
+
+	}
+}
