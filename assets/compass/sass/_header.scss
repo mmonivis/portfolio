@@ -1,3 +1,22 @@
-.name {
+.name-header{
+	height: 150px;
+	top: 30vh;
 	color: #fff;
+	padding-right: 50px;
+	text-align:right;
+	h1{
+		color:#fff;
+	}
+}
+
+.work-title{
+	height: 150px;
+	top: 30vh;
+	color: #fff;
+	padding-right: 50px;
+	vertical-align: middle;
+	h3{
+		font-size: 72px;
+		color:#fff;
+	}
 }

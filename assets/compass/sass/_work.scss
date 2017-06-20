@@ -1,0 +1,39 @@
+.work-div {
+	// background-color: $dark-brown;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.example {
+	height: 100%;
+	width: 33%;
+	// background: white;
+	position: relative;
+	float: left;
+	padding: 20px;
+	// margin-right: 2px;
+	margin-bottom: 4%;
+	&:nth-child(even) {
+	margin-right: 0;
+	}
+	img {
+		height:100%;
+		background-size: contain;
+		background-position: center;
+	}
+}
+
+.come-in {
+  transform: translateX(1000px);
+  animation: come-in 2s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.3s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}

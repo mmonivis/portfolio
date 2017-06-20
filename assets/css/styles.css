@@ -1,39 +1,160 @@
 /* Website Color Scheme Variables */
-/* line 1, ../compass/sass/_header.scss */
-.name {
-  color: #fff;
+/* line 22, ../compass/sass/_variables.scss */
+div, ul, li {
+  border: solid black 1px;
 }
 
-/* line 1, ../compass/sass/_navbar.scss */
+/* FOR MD RESOLUTIONS */
+/* line 4, ../compass/sass/_navbar.scss */
 .navbar {
-  font-family: 'Josefin Sans', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
   color: #fff;
   height: 80px;
 }
 
-/* line 8, ../compass/sass/_navbar.scss */
+/* line 12, ../compass/sass/_navbar.scss */
 .nav-links {
   line-height: 20px;
   font-size: 18px;
   vertical-align: middle;
-  text-align: right;
-  margin-right: 70px;
+  float: right;
 }
-/* line 15, ../compass/sass/_navbar.scss */
+/* line 18, ../compass/sass/_navbar.scss */
 .nav-links a {
   color: #fff;
 }
-/* line 19, ../compass/sass/_navbar.scss */
+/* line 22, ../compass/sass/_navbar.scss */
 .nav-links li {
   list-style: none;
   display: inline-block;
-  padding: 30px 25px;
+  padding: 20px 30px;
 }
-/* line 25, ../compass/sass/_navbar.scss */
+/* line 28, ../compass/sass/_navbar.scss */
 .nav-links li:hover {
   text-decoration: none;
 }
 
+/* line 33, ../compass/sass/_navbar.scss */
+.logo {
+  float: left;
+}
+
+/* line 39, ../compass/sass/_navbar.scss */
+.fa {
+  padding: 10px;
+  margin: 10px 40px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+}
+
+/* line 51, ../compass/sass/_navbar.scss */
+.fa:hover {
+  text-decoration: none;
+  background: #226078;
+  color: #fff;
+}
+
+/* line 1, ../compass/sass/_header.scss */
+.name-header {
+  height: 150px;
+  top: 30vh;
+  color: #fff;
+  padding-right: 50px;
+  text-align: right;
+}
+/* line 7, ../compass/sass/_header.scss */
+.name-header h1 {
+  color: #fff;
+}
+
+/* line 12, ../compass/sass/_header.scss */
+.work-title {
+  height: 150px;
+  top: 30vh;
+  color: #fff;
+  padding-right: 50px;
+  vertical-align: middle;
+}
+/* line 18, ../compass/sass/_header.scss */
+.work-title h3 {
+  font-size: 72px;
+  color: #fff;
+}
+
+/* line 1, ../compass/sass/_about.scss */
+.about {
+  color: #000;
+  font-size: 36px;
+}
+/* line 4, ../compass/sass/_about.scss */
+.about p {
+  font-size: 16px;
+}
+
+/* line 9, ../compass/sass/_about.scss */
+.edu-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 14, ../compass/sass/_about.scss */
+.skills-cat {
+  padding: 20px 90px;
+}
+
+/* line 1, ../compass/sass/_work.scss */
+.work-div {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* line 10, ../compass/sass/_work.scss */
+.example {
+  height: 100%;
+  width: 33%;
+  position: relative;
+  float: left;
+  padding: 20px;
+  margin-bottom: 4%;
+}
+/* line 19, ../compass/sass/_work.scss */
+.example:nth-child(even) {
+  margin-right: 0;
+}
+/* line 22, ../compass/sass/_work.scss */
+.example img {
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 29, ../compass/sass/_work.scss */
+.come-in {
+  transform: translateX(1000px);
+  animation: come-in 2s ease forwards;
+}
+
+/* line 33, ../compass/sass/_work.scss */
+.come-in:nth-child(odd) {
+  animation-duration: 0.3s;
+  /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
 /* line 6, ../compass/sass/_footer.scss */
 .main {
   background: blue;
@@ -57,27 +178,63 @@
   text-decoration: none;
 }
 
-/* line 6, ../compass/sass/styles.scss */
+/* line 8, ../compass/sass/styles.scss */
 body {
-  background: url("../images/xfitgrips.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  height: 100vh;
+  font-family: 'Josefin Sans', 'Raleway', sans-serif;
+}
+
+/* line 13, ../compass/sass/styles.scss */
+h1 {
+  color: #226078;
+}
+
+/* line 17, ../compass/sass/styles.scss */
+.img-one {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/snatch.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 13, ../compass/sass/styles.scss */
-body:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right, #000, #000);
-  opacity: .6;
+
+/* line 21, ../compass/sass/styles.scss */
+.img-two {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bicycle.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* line 25, ../compass/sass/styles.scss */
-h1 {
-  color: #226078;
+.img-three {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/xfitgrips.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 29, ../compass/sass/styles.scss */
+.arrow-div {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 34, ../compass/sass/styles.scss */
+.arrow {
+  height: 30px;
 }

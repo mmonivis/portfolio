@@ -1,6 +1,10 @@
+/* FOR MD RESOLUTIONS */
+// @media screen and (min-width: 480px)
+
 .navbar {
-	font-family: 'Josefin Sans', sans-serif;
-	// font-family: 'Raleway', sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
 	color: #fff;
 	height: 80px;
 }
@@ -9,8 +13,7 @@
 	line-height: 20px;
 	font-size: 18px;
 	vertical-align: middle;
-	text-align: right;
-	margin-right: 70px;
+	float: right;
 
 	a {
 		color:#fff;
@@ -19,14 +22,34 @@
 	li {
 		list-style: none;
 		display: inline-block;
-		padding: 30px 25px;
+		padding: 20px 30px;
 	}
 
 	li:hover{
 		text-decoration: none;
 	}
+}
 
-	li:active{
+.logo{
+	// padding: 20px 20px;
+	// margin: 8px;
+	float:left;
+}
 
-	}
+.fa {
+    padding: 10px;
+    margin: 10px 40px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+}
+
+.fa:hover{
+	text-decoration: none;
+	background: $teal;
+	color: #fff;
 }
