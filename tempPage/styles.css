@@ -1,0 +1,28 @@
+body{
+  background-color: #F2F2F2;
+  font-family: 'Raleway', cursive;
+}
+
+.header{
+  margin-top: 25vh;
+}
+
+.logo{
+  float: left;
+  font-family: 'Stalemate', cursive;
+  font-size: 190px;
+  margin-top: 5px;
+  background-color: #226078;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  color: #F2F2F2;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.text{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
